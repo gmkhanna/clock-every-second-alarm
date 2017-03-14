@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Alarm Clock</title>
@@ -10,15 +11,18 @@
     <div class="container">
       <h2>Alarm - Wake UP!</h2>
     </div>
-      <div id="displayed-clock">
+      <div id="displayed-momentJS">
 
       </div>
       <div id="set-alarm-time">
-        <form class="" action="index.html" method="post">
+        <form id="alarm-form" action="index.html" method="post">
           <label>Set Your Alarm Time</label>
-          <input type="time" value="alarm-time">
-          <button type="submit" name="button"></button>
+          <input id="time-input" type="time">
+          <button type="submit" name="button">Set Your Alarm</button>
         </form>
+      </div>
+      <div id="beep-display">
+        <h1>BEEP BEEP!!!</h1>
       </div>
 
 
